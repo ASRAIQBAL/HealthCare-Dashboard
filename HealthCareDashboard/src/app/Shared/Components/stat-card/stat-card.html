@@ -1,0 +1,18 @@
+<div class="stat-card" [style.backgroundColor]="bgcolor">
+    <div class="stat-card-header">
+        <img src="assets/icons/{{cardicon}}" alt="">
+    </div>
+
+    <div class="stat-card-content">
+        <p>{{cardtitle}}</p>
+        <h3>{{cardvalue}}
+            @if(cardtitle == 'Temperature'){
+            <sup>o</sup>
+            }
+        </h3>
+    </div>
+
+    <div class="stat-card-footer">
+        <p>{{cardlabel}}</p>
+    </div>
+</div>

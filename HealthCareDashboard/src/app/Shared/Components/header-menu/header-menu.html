@@ -1,0 +1,27 @@
+<div class="nav-bar">
+    <div class="logo">
+        <img src="assets/images/TestLogo.svg" alt="Tech.Care">
+    </div>
+    <ul class="menu-list">
+        @for(i of navBarItem; track i.id ) {
+        <li  [class.active]="i.active"> 
+            <img [src]="i.icon" alt="">
+            {{i.title}}</li>
+        }
+    </ul>
+
+  
+     <div class="profile-section">
+        <div class="profile-info">
+            <img class="profile-img" src="assets/icons/senior-woman-doctor.png" alt="profile">
+            <div class="profile-text">
+                <span class="profile-name">Dr. Jose Simmons</span>
+                <span class="profile-role">General Practitioner</span>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <img src="assets/icons/settings.png" alt="settings" >
+            <img src="assets/icons/more_vert.png" alt="more" >
+        </div>
+    </div>
+</div>

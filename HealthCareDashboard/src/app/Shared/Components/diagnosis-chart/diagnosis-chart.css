@@ -1,0 +1,76 @@
+.chart-card {
+  background: #F4F0FE;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.chart-left {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 90% !important;
+}
+
+.chart-content {
+  display: flex;
+  gap: 20px;
+}
+
+.chart-left {
+  flex: 1;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.chart-header h3, .chart-header p {
+  margin: 0;
+}
+
+.chart-header p {
+  margin: 0;
+  text-align: right;
+}
+
+.chart-legend {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.legend-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 10px 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+
+.systolic {
+  background: #e66fd2;
+}
+
+.diastolic {
+  background: #8f6fff;
+}/*# sourceMappingURL=diagnosis-chart.css.map */

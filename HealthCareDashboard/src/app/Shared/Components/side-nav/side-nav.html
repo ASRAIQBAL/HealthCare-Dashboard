@@ -1,0 +1,25 @@
+<div class="main-bar">
+    <div class="bar-header">
+        <h3>Patients</h3>
+        <img src="assets/icons/search_FILL0.svg" width="20" height="20">
+    </div>
+    <div class="patient-list">
+        @if (patients$ | async; as patients) {
+        @for(patient of patients; track patient.name){
+        <div class="pat-Row" [class.selected]="patient.name ===selected">
+            <img [src]="patient.profile_picture">
+
+            <div class="pat-text">
+                <strong>{{patient.name}}</strong>
+                <span>{{patient.gender}} &nbsp; {{patient.age}} </span>
+            </div>
+            <div class="more-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        }
+        }
+    </div>
+</div>

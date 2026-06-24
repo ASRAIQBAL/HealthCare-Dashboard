@@ -1,0 +1,109 @@
+.main-bar {
+    background-color: #FFFFFF;
+    width: 275px;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 30px);
+    /* viewport height minus header */
+    overflow: hidden;
+}
+
+.bar-header {
+    display: flex;
+    align-items: center;
+    // gap: 70%; unstable replace with spacebetween
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.bar-header h3 {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.bar-header img {
+    width: 26;
+    height: 26px;
+    margin-right: 30px;
+}
+
+.patient-list {
+    text-align: left;
+    flex: 1;
+    min-height: 0;
+    padding: 6px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.pat-Row {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    /* vertically center image, text, dots */
+}
+
+.pat-Row.selected {
+    background-color: #D8FCF7;
+}
+
+.pat-Row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+.pat-text {
+    flex: 1;
+    /* this creates the space — pushes dots to far right */
+    min-width: 0;
+}
+
+.pat-text strong {
+    // font-size: 16px;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #072635;
+}
+
+.pat-text span {
+    display: block;
+    font-size: 12px;
+    color: #707070;
+    margin-top: 2px;
+}
+
+.pat-Row:hover {
+    background-color: #D8FCF7;
+}
+
+.more-icon {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    /* horizontal dots */
+    align-items: center;
+    gap: 3px;
+    padding: 4px;
+
+    span {
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: #707070;
+        border-radius: 50%;
+    }
+}

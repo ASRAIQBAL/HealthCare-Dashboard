@@ -1,0 +1,40 @@
+<!-- <div class="chart-container">
+    <canvas #chartCanvas ></canvas>
+</div> -->
+
+<div class="chart-card">
+    <div class="chart-content">
+
+        <div class="chart-left">
+            <div class="chart-header">
+                <h3>Blood Pressure</h3>
+                <p>Last 6 months</p>
+            </div>
+
+            <canvas #chartCanvas></canvas>
+        </div>
+
+        <div class="chart-legend">
+                  @let hover = (hoverData$ | async);
+            <div class="legend-item">
+                <span class="dot systolic"></span>
+                <div>
+                    <p>Systolic</p>
+                    <h4>{{ hover?.systolic ?? '--' }}</h4>
+                    <small>{{hover?.systoliclevel}}</small>
+                </div>
+            </div>
+            <div class="legend-divider"></div>
+
+            <div class="legend-item">
+                <span class="dot diastolic"></span>
+                <div>
+                    <p>Diastolic</p>
+                            <h4>{{ hover?.diastolic ?? '--' }}</h4>
+                    <small>{{ hover?.diastoliclevel}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

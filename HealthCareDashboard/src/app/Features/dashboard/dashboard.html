@@ -1,0 +1,93 @@
+<div class="dashboard-body">
+  <app-header-menu></app-header-menu>
+
+  <div class="dashboard-layout">
+    <div class="left-column">
+      <app-side-nav></app-side-nav>
+    </div>
+
+    <div class="center-column">
+
+      <div class="main-content">
+        <div class="main-content-text">
+          <h2>Diagnosis History</h2>
+        </div>
+        <div class="chart-container">
+          <app-diagnosis-chart></app-diagnosis-chart>
+        </div>
+
+        <div class="stats-row">
+          <app-stat-card cardtitle="Respirartory Rate" [cardvalue]="respiratRate.value +' ' + 'pbm'"
+            [cardlabel]=respiratRate.levels bgcolor="#E0F3FA" cardicon="respiratory rate.svg">
+          </app-stat-card>
+
+          <app-stat-card cardtitle="Temperature" [cardvalue]="temperature.value + ' ' + 'F'"
+            [cardlabel]="temperature.levels" bgcolor="#FFE6E9" cardicon="temperature.svg">
+          </app-stat-card>
+
+          <app-stat-card cardtitle="Heart Rate" [cardvalue]="heartRate.value+ ' '+'bpm'" [cardlabel]="heartRate.levels"
+            bgcolor="#FFE6F1" cardicon="HeartBPM.svg">
+          </app-stat-card>
+        </div>
+
+      </div>
+
+      <div class="diagnostic-list-conatainer">
+        <div class="diagnostic-list-text">
+          <h2>Diagnosis List</h2>
+        </div>
+        <div class="list-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Problem/Diagnosis</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            @if(diagnostic_list.length > 0){
+            <tbody>
+              @for(t of diagnostic_list ; track t.id ){
+              <tr>
+                <td>{{t.name}}</td>
+                <td>{{t.description}}</td>
+                <td>{{t.status}}</td>
+
+              </tr>
+              }
+
+            </tbody>
+            }
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="right-column">
+      <app-profile-panel></app-profile-panel>
+
+      <div class="lab-results-card">
+        <div class="lab-results-header">
+          <h3>Lab Results</h3>
+        </div>
+        @if(labResult.length > 0){
+
+        <div class="lab-results-content">
+          @for(p of labResult; track p.id ){
+          <div class="lab-row">
+            <p>{{p.test}}</p>
+            <img src="assets/icons/download_FILL.svg">
+          </div>
+          }
+        </div>
+        }
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
