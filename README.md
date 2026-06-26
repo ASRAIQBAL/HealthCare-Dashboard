@@ -1,6 +1,9 @@
 [README.md](https://github.com/user-attachments/files/29291112/README.md)
 # HealthCare-Dashboard
 A responsive healthcare dashboard built with **Angular 21+** as part of a frontend developer assessment. The application displays patient data, diagnosis history, vital statistics, and lab results fetched from a live API.
+
+🚧 Work in Progress: Features and UI are actively being refined.
+
 # 🏥 Tech.Care — Healthcare Dashboard
 
 A responsive healthcare dashboard built with **Angular 21+** as part of a frontend developer assessment. The application displays patient data, diagnosis history, vital statistics, and lab results fetched from a live API.
