@@ -6,7 +6,7 @@ The application consumes live REST APIs to dynamically populate the patient list
 
 🚧 Work in Progress: Features and UI are actively being refined.
 
-🔗 Live Demo
+  # 🔗 Live Demo
 
 ## Vercel: https://health-care-dashboard-iota-nine.vercel.app
 
