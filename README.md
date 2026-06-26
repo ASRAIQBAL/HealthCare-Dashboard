@@ -8,7 +8,7 @@ The application consumes live REST APIs to dynamically populate the patient list
 
 🔗 Live Demo
 
-#Vercel: https://health-care-dashboard-iota-nine.vercel.app
+# Vercel: https://health-care-dashboard-iota-nine.vercel.app
 
 # 🏥 Tech.Care — Healthcare Dashboard
 
