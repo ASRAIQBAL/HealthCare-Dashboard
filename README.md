@@ -1,8 +1,14 @@
 [README.md](https://github.com/user-attachments/files/29291112/README.md)
 # HealthCare-Dashboard
-A responsive healthcare dashboard built with **Angular 21+** as part of a frontend developer assessment. The application displays patient data, diagnosis history, vital statistics, and lab results fetched from a live API.
+A responsive healthcare dashboard built with **Angular 21+**, TypeScript, RxJS, SCSS, and REST APIs, showcasing patient records, diagnosis history, vital signs, laboratory results, and interactive health analytics.
+
+The application consumes live REST APIs to dynamically populate the patient list, patient profile, diagnosis history chart, vital statistics cards, diagnosis table, and laboratory results, while leveraging RxJS Observables and BehaviorSubjects for reactive state management.
 
 🚧 Work in Progress: Features and UI are actively being refined.
+
+🔗 Live Demo
+
+Vercel: https://health-care-dashboard-iota-nine.vercel.app/dashboard
 
 # 🏥 Tech.Care — Healthcare Dashboard
 
